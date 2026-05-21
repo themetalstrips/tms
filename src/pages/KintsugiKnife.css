@@ -1,0 +1,205 @@
+/* ===============================
+   KINTSUGI KNIFE PAGE
+================================== */
+.kintsugi-page {
+    padding-top: 5rem;
+}
+
+/* Hero */
+.kintsugi-hero {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    background: var(--bg-darker);
+    position: relative;
+    overflow: hidden;
+    padding: 4rem 0;
+}
+
+.kintsugi-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 70% 50%, rgba(201,162,39,0.06) 0%, transparent 60%);
+    pointer-events: none;
+}
+
+.kintsugi-hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+}
+
+.kintsugi-hero-text h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+    line-height: 1.1;
+}
+
+.kintsugi-hero-text h1 em {
+    color: var(--accent-gold);
+    font-style: italic;
+}
+
+.kintsugi-hero-text p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    line-height: 1.8;
+}
+
+.kintsugi-badges {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.kintsugi-badge {
+    padding: 0.4rem 1rem;
+    border: 1px solid var(--accent-gold-border);
+    border-radius: 100px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--accent-gold);
+    background: var(--accent-gold-glow);
+}
+
+.kintsugi-hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.kintsugi-hero-image img {
+    max-width: 100%;
+    max-height: 500px;
+    object-fit: contain;
+    filter: drop-shadow(0 20px 60px rgba(0,0,0,0.5));
+}
+
+/* Story Section */
+.kintsugi-story {
+    background: var(--bg-dark);
+}
+
+.kintsugi-story h2 {
+    font-size: clamp(2rem, 3vw, 2.5rem);
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+}
+
+.kintsugi-story h2 em {
+    color: var(--accent-gold);
+    font-style: italic;
+}
+
+.kintsugi-story p {
+    font-size: 1.05rem;
+    line-height: 1.9;
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Specs */
+.kintsugi-specs {
+    background: var(--bg-darker);
+}
+
+.specs-table {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.specs-table-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--border-subtle);
+    align-items: center;
+}
+
+.specs-table-row:last-child {
+    border-bottom: none;
+}
+
+.specs-table-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--accent-gold);
+    font-weight: 600;
+}
+
+.specs-table-value {
+    font-size: 0.95rem;
+    color: var(--text-primary);
+    font-weight: 500;
+    text-align: right;
+}
+
+/* FAQ */
+.kintsugi-faq {
+    background: var(--bg-dark);
+}
+
+.faq-list {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    border-bottom: 1px solid var(--border-subtle);
+    padding: 1.5rem 0;
+}
+
+.faq-question {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-heading);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    text-align: left;
+    padding: 0;
+    background: none;
+    border: none;
+    color: var(--text-heading);
+}
+
+.faq-answer {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    margin-top: 0.75rem;
+    line-height: 1.7;
+    padding-right: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .kintsugi-hero-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 3rem;
+    }
+
+    .kintsugi-badges {
+        justify-content: center;
+    }
+
+    .kintsugi-hero-image {
+        order: -1;
+    }
+
+    .kintsugi-hero-image img {
+        max-height: 350px;
+    }
+}

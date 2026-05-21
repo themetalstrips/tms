@@ -1,0 +1,296 @@
+/* ===============================
+   PRODUCT DETAIL
+================================== */
+.product-detail {
+    padding-top: 8rem;
+    min-height: 80vh;
+}
+
+.product-detail-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+}
+
+.product-detail-image {
+    position: sticky;
+    top: 8rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    aspect-ratio: 1;
+}
+
+.product-detail-image img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    transition: transform 0.6s var(--ease-out);
+}
+
+.product-detail-image:hover img {
+    transform: scale(1.04);
+}
+
+.product-detail-info {
+    padding: 1rem 0;
+}
+
+.product-detail-info .product-badge-detail {
+    display: inline-block;
+    padding: 0.3rem 0.75rem;
+    background: var(--accent-gold-glow);
+    border: 1px solid var(--accent-gold-border);
+    color: var(--accent-gold);
+    font-size: 0.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 100px;
+    margin-bottom: 1rem;
+}
+
+.product-detail-info h1 {
+    font-size: clamp(2rem, 3vw, 2.75rem);
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+}
+
+.product-detail-subtitle {
+    font-size: 1rem;
+    color: var(--text-muted);
+    margin-bottom: 2rem;
+    font-style: italic;
+    font-family: var(--font-heading);
+}
+
+.detail-price-section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border-subtle);
+}
+
+.detail-current-price {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--text-heading);
+}
+
+.detail-old-price {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    text-decoration: line-through;
+}
+
+.detail-description {
+    font-size: 1.05rem;
+    line-height: 1.9;
+    margin-bottom: 2rem;
+}
+
+.detail-specs-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.detail-spec-item {
+    padding: 1rem 1.25rem;
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-sm);
+}
+
+.detail-spec-item .spec-label {
+    display: block;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--accent-gold);
+    margin-bottom: 0.25rem;
+    font-weight: 600;
+}
+
+.detail-spec-item .spec-value {
+    display: block;
+    font-size: 0.9rem;
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+.detail-add-to-cart {
+    width: 100%;
+    padding: 1.1rem 2rem;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .product-detail-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .product-detail-image {
+        position: static;
+        aspect-ratio: auto;
+        padding: 2rem;
+    }
+
+    .detail-specs-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ===============================
+   QUOTE REQUEST MODAL
+================================== */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    animation: fadeIn 0.3s ease-out;
+}
+
+.modal-content {
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md);
+    width: 100%;
+    max-width: 500px;
+    padding: 2.5rem;
+    box-shadow: var(--shadow-lg), 0 0 40px rgba(0, 0, 0, 0.5);
+    position: relative;
+    animation: scaleUp 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.modal-close {
+    position: absolute;
+    top: 1.25rem;
+    right: 1.25rem;
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: color 0.2s;
+    padding: 0.25rem;
+}
+
+.modal-close:hover {
+    color: var(--text-primary);
+}
+
+.modal-content h2 {
+    font-size: 1.75rem;
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+    color: var(--text-heading);
+}
+
+.modal-subtitle {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
+
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--accent-gold);
+    font-weight: 600;
+}
+
+.form-input {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-sm);
+    padding: 0.8rem 1rem;
+    color: var(--text-primary);
+    font-family: inherit;
+    font-size: 0.95rem;
+    transition: border-color 0.2s, background-color 0.2s;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: var(--accent-gold);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.form-textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.modal-success {
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+.modal-success-icon {
+    margin-bottom: 1.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--accent-gold-glow);
+    border: 1px solid var(--accent-gold-border);
+    color: var(--accent-gold);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.modal-success h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 300;
+}
+
+.modal-success p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes scaleUp {
+    from { transform: scale(0.95); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}

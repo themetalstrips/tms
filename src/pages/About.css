@@ -1,0 +1,91 @@
+/* ===============================
+   ABOUT PAGE
+================================== */
+.about-page {
+    padding-top: 8rem;
+}
+
+.about-hero {
+    text-align: center;
+    padding: 4rem 0 5rem;
+}
+
+.about-hero h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+}
+
+.about-hero h1 em {
+    color: var(--accent-gold);
+    font-style: italic;
+}
+
+.about-hero p {
+    font-size: 1.15rem;
+    max-width: 640px;
+    margin: 0 auto;
+    line-height: 1.9;
+}
+
+.about-content {
+    padding: 4rem 0;
+}
+
+.about-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+}
+
+.about-content h2 em {
+    color: var(--accent-gold);
+    font-style: italic;
+}
+
+.about-content p {
+    font-size: 1.05rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.9;
+}
+
+.about-values {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.about-value-card {
+    padding: 2.5rem 2rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md);
+    text-align: center;
+    transition: all 0.4s var(--ease-out);
+}
+
+.about-value-card:hover {
+    border-color: var(--accent-gold-border);
+    transform: translateY(-4px);
+}
+
+.about-value-card h3 {
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+    color: var(--accent-gold);
+}
+
+.about-value-card p {
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .about-values {
+        grid-template-columns: 1fr;
+    }
+}
