@@ -169,6 +169,18 @@
     margin-bottom: 3rem;
 }
 
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contact-inputs-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
 /* Luxury Input Field Styles */
 .contact-form label {
     font-size: 0.7rem;
