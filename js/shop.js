@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <div class="price-tag">
                             <span class="quote-only-tag">Quote Only</span>
                         </div>
-                        <a href="product.html?id=${product.id}" class="btn btn-outline btn-sm">Inquire</a>
+                        <a href="product?id=${product.id}" class="btn btn-outline btn-sm">Inquire</a>
                     </div>
                 `;
             } else {
@@ -129,14 +129,14 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             card.innerHTML = `
-                <a href="product.html?id=${product.id}" class="product-image-link">
+                <a href="product?id=${product.id}" class="product-image-link">
                     <div class="product-image">
                         <img src="${product.image}" alt="${product.name}">
                         <div class="product-badge">${product.badge || 'Premium'}</div>
                     </div>
                 </a>
                 <div class="product-info">
-                    <a href="product.html?id=${product.id}" class="product-title-link">
+                    <a href="product?id=${product.id}" class="product-title-link">
                         <h3>${product.name}</h3>
                     </a>
                     <p class="product-desc">${product.description}</p>

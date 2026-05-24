@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 0.5rem;"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg> Back to Collection
         `;
         backBtn.addEventListener('click', () => {
-            window.location.href = 'shop.html';
+            window.location.href = 'shop';
         });
         container.appendChild(backBtn);
 
@@ -212,7 +212,7 @@ document.addEventListener('DOMContentLoaded', () => {
         container.innerHTML = `
             <div class="section-padding container" style="text-align: center; padding: 10rem 0;">
                 <h2>Product not found</h2>
-                <button class="btn btn-outline" style="margin-top: 2rem;" onclick="window.location.href='shop.html'">Back to Shop</button>
+                <button class="btn btn-outline" style="margin-top: 2rem;" onclick="window.location.href='shop'">Back to Shop</button>
             </div>
         `;
     }
