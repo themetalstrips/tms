@@ -13,22 +13,23 @@ jobs:
     - name: 🚚 Get latest code
       uses: actions/checkout@v4
 
-    - name: ⚙️ Use Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: '20'
-
-    - name: 📦 Install and Sync dependencies
-      run: npm install
-
-    - name: 🏗️ Build static assets
-      run: npm run build
-
     - name: 🚀 FTP Deploy to Hostinger
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
         server: ${{ secrets.FTP_SERVER }}
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: ./dist/
+        local-dir: ./
         server-dir: ./
+        exclude: |
+          **/.git*
+          **/.git*/**
+          node_modules/**
+          server/**
+          src/**
+          dist/**
+          package.json
+          package-lock.json
+          vite.config.js
+          eslint.config.js
+          README.md

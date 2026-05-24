@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Story & Metallurgy | The Metal Strips</title>
+    <meta name="description" content="Learn about our generational Sialkot forging legacy, German steel quality control protocols, and ISO 13485 clinical safety certifications.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Universal CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- About Custom CSS -->
+    <style>
+        .about-page {
+            padding: 6rem 0;
+        }
+        
+        .about-hero {
+            text-align: center;
+            margin-bottom: 5rem;
+        }
+        
+        .about-hero h1 {
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            font-weight: 300;
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+        }
+        
+        .about-hero h1 em {
+            color: var(--accent-gold);
+            font-style: italic;
+        }
+        
+        .gold-divider {
+            width: 80px;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--accent-gold), transparent);
+            margin: 1.5rem auto 2.5rem;
+        }
+        
+        .about-hero p {
+            font-size: 1.25rem;
+            line-height: 1.8;
+            max-width: 720px;
+            margin: 0 auto;
+            color: var(--text-primary);
+        }
+        
+        .about-content {
+            margin-bottom: 4rem;
+        }
+        
+        .about-content h2 {
+            font-size: 2rem;
+            font-weight: 300;
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.5px;
+        }
+        
+        .about-content h2 em {
+            color: var(--accent-gold);
+            font-style: italic;
+        }
+        
+        .about-content p {
+            margin-bottom: 1.5rem;
+            font-size: 1.05rem;
+            line-height: 1.8;
+        }
+        
+        .about-values {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 6rem;
+            border-top: 1px solid var(--border-subtle);
+            padding-top: 4rem;
+        }
+        
+        .about-value-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-md);
+            padding: 2.5rem 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .about-value-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent-gold-border);
+        }
+        
+        .about-value-card h3 {
+            font-family: var(--font-body);
+            font-size: 1.05rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 1rem;
+            color: var(--accent-gold);
+        }
+        
+        .about-value-card p {
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+        
+        @media (max-width: 992px) {
+            .about-values {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body class="animate-fade-in">
+
+    <!-- Header Section -->
+    <header class="fixed-header">
+        <div class="announcement-bar">
+            <span>FREE WORLDWIDE SHIPPING ON ALL ORDERS</span>
+            <button class="announcement-close" aria-label="Close Announcement">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+        </div>
+        <div class="navbar">
+            <div class="container nav-container">
+                <a href="index.html" class="nav-logo">
+                    The Metal Strips
+                </a>
+                <nav class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="about.html" class="active">Our Story</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+                <div class="nav-actions">
+                    <button class="cart-btn" aria-label="Open Cart">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                        <span class="cart-badge" style="display: none;">0</span>
+                    </button>
+                    <button class="mobile-toggle" aria-label="Toggle Menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="6" x2="20" y2="6"></line><line x1="4" y1="18" x2="20" y2="18"></line></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="about-page">
+            <div class="container-narrow">
+                <section class="about-hero">
+                    <span class="section-label" style="justify-content: center;">Our Story</span>
+                    <h1>The Art of <em>Precision</em></h1>
+                    <div class="gold-divider"></div>
+                    <p>
+                        Founded in the global capital of surgical metalwork, The Metal Strips represents the perfect marriage of generations-old metal forging with state-of-the-art medical engineering. We forge the clinical instruments that surgeons, dentists, and veterinarians rely on to execute lifesaving actions daily.
+                    </p>
+                </section>
+
+                <section class="about-content">
+                    <h2>Engineered for Complete <em>Safety</em></h2>
+                    <p>
+                        Every Metal Strips instrument begins its journey as a raw slab of premium German-grade austenitic and martensitic stainless steel. This specific alloy is trusted globally for its extraordinary tensile strength, edge retention, and superior corrosion resistance.
+                    </p>
+                    <p>
+                        Through a meticulous 47-step forging process, each instrument is hand-shaped, heat-hardened to optimal HRC levels, and hand-polished to achieve a pristine passive surface layer. This ensures the steel resists pitting and degradation, even under repetitive autoclave sterilization cycles at 134°C.
+                    </p>
+                    <p>
+                        From fine dissecting scissors equipped with Tungsten Carbide (TC) inserts for clean incisions to perfectly aligned dental extraction forceps, every piece is sculpted to perform flawlessly under high-pressure clinical scenarios.
+                    </p>
+                </section>
+
+                <section class="about-content">
+                    <h2>Calibrated to <em>Artistry</em></h2>
+                    <p>
+                        We believe that a high-end clinical instrument should feel like an extension of the practitioner's hand. That is why our master metal artisans individually inspect, tension, and calibrate every hinge, micro-serrated teeth, and joint.
+                    </p>
+                    <p>
+                        This tactile feedback and weight balance give surgeons, dentists, and veterinary practitioners absolute confidence during sensitive operations, reducing hand fatigue and enhancing clinical outcomes.
+                    </p>
+                </section>
+
+                <div class="about-values">
+                    <div class="about-value-card">
+                        <h3>ISO 13485 Standards</h3>
+                        <p>Every batch of clinical steel is fully certified for quality, tensile strength, and clinical safety.</p>
+                    </div>
+                    <div class="about-value-card">
+                        <h3>CE Approved Reusable</h3>
+                        <p>All reusable instruments are certified for clinical use and engineered to sustain hundreds of autoclave runs.</p>
+                    </div>
+                    <div class="about-value-card">
+                        <h3>Clinical Warranty</h3>
+                        <p>We stand behind our medical metallurgy with a complete materials guarantee and professional B2B support.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Global Cart Drawer Overlay -->
+    <div class="cart-drawer-overlay" id="cartDrawerOverlay">
+        <div class="cart-drawer">
+            <div class="cart-drawer-header">
+                <h3>Shopping Bag</h3>
+                <button class="cart-drawer-close" aria-label="Close Cart">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                </button>
+            </div>
+            <div class="cart-drawer-items">
+                <!-- Cart items will be loaded dynamically -->
+            </div>
+            <div class="cart-drawer-footer">
+                <div class="cart-subtotal-row">
+                    <span>Subtotal</span>
+                    <span class="cart-subtotal-price">$0.00</span>
+                </div>
+                <button class="btn btn-primary btn-checkout" onclick="alert('Checkout process initiated!')">Secure Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="nav-logo" style="display: block; margin-bottom: 1.5rem;">The Metal Strips</a>
+                <p>Standardizing clinical instruments with German grade surgical steel and master Sialkot forging. Precision Forged. Artisan Finished.</p>
+            </div>
+            <div class="footer-links">
+                <h4 class="footer-title">Shop Collection</h4>
+                <ul>
+                    <li><a href="shop.html">All Catalog</a></li>
+                    <li><a href="about.html">Our Story</a></li>
+                    <li><a href="contact.html">Contact Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4 class="footer-title">Corporate Office</h4>
+                <p>Sialkot Industrial Zone, Punjab, Pakistan</p>
+                <p>Direct Support: <a href="tel:+923214555949">+92 321 4555949</a></p>
+                <p>Email: <a href="mailto:info@themetalstrips.com">info@themetalstrips.com</a></p>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 The Metal Strips. All rights reserved.</p>
+            <div class="footer-legal">
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Universal Scripts -->
+    <script src="js/products.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

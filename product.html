@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instrument Specifications | The Metal Strips</title>
+    <meta name="description" content="View absolute dimensions, steel material specs, certifications, and request volume pricing contracts.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Universal CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Product Page Custom CSS -->
+    <link rel="stylesheet" href="css/product.css">
+</head>
+<body class="animate-fade-in">
+
+    <!-- Header Section -->
+    <header class="fixed-header">
+        <div class="announcement-bar">
+            <span>FREE WORLDWIDE SHIPPING ON ALL ORDERS</span>
+            <button class="announcement-close" aria-label="Close Announcement">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+        </div>
+        <div class="navbar">
+            <div class="container nav-container">
+                <a href="index.html" class="nav-logo">
+                    The Metal Strips
+                </a>
+                <nav class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="shop.html" class="active">Shop</a>
+                    <a href="about.html">Our Story</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+                <div class="nav-actions">
+                    <button class="cart-btn" aria-label="Open Cart">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                        <span class="cart-badge" style="display: none;">0</span>
+                    </button>
+                    <button class="mobile-toggle" aria-label="Toggle Menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="6" x2="20" y2="6"></line><line x1="4" y1="18" x2="20" y2="18"></line></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="product-detail">
+            <div class="container" id="productDetailContainer">
+                <!-- Dynamic product specifications will load here via JS -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Dynamic B2B Custom Quote Request Modal -->
+    <div class="modal-overlay" id="quoteModal" style="display: none;">
+        <div class="modal-content">
+            <button class="modal-close" id="modalCloseBtn" aria-label="Close Modal">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+            
+            <!-- Form View -->
+            <div id="modalFormView">
+                <h2>Request Direct Quote</h2>
+                <p class="modal-subtitle">
+                    Submit your requirement details below. A Mozek Surgical representative will contact you with bulk contract pricing within 24 hours.
+                </p>
+                <form class="modal-form" id="quoteForm">
+                    <div class="form-group">
+                        <label for="quoteProduct">Selected Instrument</label>
+                        <input type="text" id="quoteProduct" class="form-input" disabled style="opacity: 0.7; background: rgba(255,255,255,0.01);">
+                    </div>
+                    <div class="form-group">
+                        <label for="quoteName">Full Name *</label>
+                        <input type="text" id="quoteName" class="form-input" required placeholder="Dr. Alexander Smith">
+                    </div>
+                    <div class="form-group">
+                        <label for="quoteHospital">Hospital / Clinic *</label>
+                        <input type="text" id="quoteHospital" class="form-input" required placeholder="St. Jude Veterinary Center">
+                    </div>
+                    <div class="form-group">
+                        <label for="quoteEmail">Work Email *</label>
+                        <input type="email" id="quoteEmail" class="form-input" required placeholder="smith@vetclinic.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="quoteQty">Quantity Needed *</label>
+                        <input type="number" id="quoteQty" class="form-input" required min="1" value="1">
+                    </div>
+                    <div class="form-group">
+                        <label for="quoteNotes">Notes / Special Requirements</label>
+                        <textarea id="quoteNotes" class="form-input form-textarea" placeholder="Specify sizes, customization, or shipping schedule..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="margin-top: 0.5rem; background: var(--accent-gold); color: #000; border-color: var(--accent-gold);">
+                        Submit Quote Request
+                    </button>
+                </form>
+            </div>
+
+            <!-- Success Transmission View -->
+            <div id="modalSuccessView" style="display: none;">
+                <div class="modal-success">
+                    <div class="modal-success-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    </div>
+                    <h3>Request Submitted</h3>
+                    <p id="successDetail">
+                        <!-- Success message text pre-populated via JS -->
+                    </p>
+                    <button class="btn btn-outline" id="modalSuccessCloseBtn">Back to Catalog</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Global Cart Drawer Overlay -->
+    <div class="cart-drawer-overlay" id="cartDrawerOverlay">
+        <div class="cart-drawer">
+            <div class="cart-drawer-header">
+                <h3>Shopping Bag</h3>
+                <button class="cart-drawer-close" aria-label="Close Cart">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                </button>
+            </div>
+            <div class="cart-drawer-items">
+                <!-- Cart items will be loaded dynamically -->
+            </div>
+            <div class="cart-drawer-footer">
+                <div class="cart-subtotal-row">
+                    <span>Subtotal</span>
+                    <span class="cart-subtotal-price">$0.00</span>
+                </div>
+                <button class="btn btn-primary btn-checkout" onclick="alert('Checkout process initiated!')">Secure Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="nav-logo" style="display: block; margin-bottom: 1.5rem;">The Metal Strips</a>
+                <p>Standardizing clinical instruments with German grade surgical steel and master Sialkot forging. Precision Forged. Artisan Finished.</p>
+            </div>
+            <div class="footer-links">
+                <h4 class="footer-title">Shop Collection</h4>
+                <ul>
+                    <li><a href="shop.html">All Catalog</a></li>
+                    <li><a href="about.html">Our Story</a></li>
+                    <li><a href="contact.html">Contact Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4 class="footer-title">Corporate Office</h4>
+                <p>Sialkot Industrial Zone, Punjab, Pakistan</p>
+                <p>Direct Support: <a href="tel:+923214555949">+92 321 4555949</a></p>
+                <p>Email: <a href="mailto:info@themetalstrips.com">info@themetalstrips.com</a></p>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 The Metal Strips. All rights reserved.</p>
+            <div class="footer-legal">
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Universal Scripts -->
+    <script src="js/products.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/product.js"></script>
+</body>
+</html>
