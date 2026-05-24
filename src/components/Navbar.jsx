@@ -28,7 +28,6 @@ const Navbar = () => {
                     <NavLink to="/" onClick={() => setIsMobileMenuOpen(false)}>Home</NavLink>
                     <NavLink to="/shop" onClick={() => setIsMobileMenuOpen(false)}>Shop</NavLink>
                     <NavLink to="/about" onClick={() => setIsMobileMenuOpen(false)}>Our Story</NavLink>
-                    <NavLink to="/admin" onClick={() => setIsMobileMenuOpen(false)} style={{ fontSize: '0.7rem', color: 'var(--text-muted)' }}>Admin</NavLink>
                 </nav>
 
                 <div className="nav-actions">
