@@ -65,7 +65,7 @@
                 <div class="contact-grid-container">
                     <!-- Left Column: Support Cards -->
                     <div class="contact-info-column">
-                        <h2 style="font-family: var(--font-heading); color: var(--text-heading); font-weight: 500; fontSize: 1.5rem; margin-bottom: 0.5rem;">B2B Corporate Desk</h2>
+                        <h2 style="font-family: var(--font-heading); color: var(--text-heading); font-weight: 300; font-size: 2.2rem; margin-bottom: 1.5rem; letter-spacing: -0.5px;">B2B Corporate Desk</h2>
                         
                         <!-- Phone Card -->
                         <div class="contact-info-card">
@@ -73,61 +73,61 @@
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
                             </div>
                             <h3>Direct Phone</h3>
-                            <p style="font-size: 1.1rem; font-weight: 500;">+92 321 4555949</p>
-                            <span style="font-size: 0.75rem; color: var(--text-muted);">Monday – Friday: 9AM – 6PM EST</span>
+                            <p class="contact-details">+92 321 4555949</p>
+                            <span class="card-subtitle">Monday – Friday: 9AM – 6PM EST</span>
                         </div>
-
+ 
                         <!-- Email Card -->
                         <div class="contact-info-card">
                             <div class="contact-card-icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
                             </div>
                             <h3>Support Email</h3>
-                            <a href="mailto:info@themetalstrips.com">info@themetalstrips.com</a>
-                            <p style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.5rem; margin-bottom: 0;">Response within 1 business day</p>
+                            <a href="mailto:info@themetalstrips.com" class="contact-link">info@themetalstrips.com</a>
+                            <span class="card-subtitle">Response within 1 business day</span>
                         </div>
-
+ 
                         <!-- Location Card -->
                         <div class="contact-info-card">
                             <div class="contact-card-icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
                             </div>
                             <h3>Headquarters</h3>
-                            <p>The Metal Strips</p>
-                            <span style="font-size: 0.75rem; color: var(--text-muted);">Sialkot 51310, Punjab, Pakistan</span>
+                            <p class="contact-details" style="font-size: 1.35rem; font-family: var(--font-heading); margin-bottom: 0.2rem;">The Metal Strips</p>
+                            <span class="card-subtitle">Sialkot 51310, Punjab, Pakistan</span>
                         </div>
                     </div>
-
+ 
                     <!-- Right Column: Interactive Form -->
                     <div class="contact-form-col">
                         <!-- Form View -->
                         <div id="contactFormView">
-                            <form id="contactForm">
-                                <h2 style="font-family: var(--font-heading); color: var(--text-heading); font-weight: 500; fontSize: 1.5rem; margin-bottom: 0.5rem;">Send a Message</h2>
+                            <form id="contactForm" class="contact-form">
+                                <h2>Send a <span>Message</span></h2>
                                 <p class="subtitle">Complete the form below to initiate direct correspondence.</p>
                                 
                                 <div class="contact-inputs-row">
-                                    <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                                    <div class="form-group-container">
                                         <label for="contactName">Full Name</label>
                                         <input type="text" id="contactName" class="form-input" required placeholder="Dr. Alexander Smith">
                                     </div>
-                                    <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                                    <div class="form-group-container">
                                         <label for="contactEmail">Business Email</label>
                                         <input type="email" id="contactEmail" class="form-input" required placeholder="smith@vetclinic.com">
                                     </div>
                                 </div>
-
-                                <div style="display: flex; flex-direction: column; gap: 0.5rem; margin-top: 1.25rem;">
-                                    <label for="contactSubject" style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1.5px; color: var(--accent-gold); font-weight: 600;">Subject Inquiry</label>
+ 
+                                <div class="form-group-container" style="margin-top: 0.5rem;">
+                                    <label for="contactSubject">Subject Inquiry</label>
                                     <input type="text" id="contactSubject" class="form-input" required placeholder="B2B Wholesales Contract / Certification Request">
                                 </div>
-
-                                <div style="display: flex; flex-direction: column; gap: 0.5rem; margin-top: 1.25rem;">
-                                    <label for="contactMessage" style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1.5px; color: var(--accent-gold); font-weight: 600;">Message Details</label>
+ 
+                                <div class="form-group-container" style="margin-top: 0.5rem;">
+                                    <label for="contactMessage">Message Details</label>
                                     <textarea id="contactMessage" class="form-input form-textarea" required rows="5" placeholder="Specify sizes, customization requirements, or bulk volumes needed..."></textarea>
                                 </div>
 
-                                <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1.5rem; display: flex; align-items: center; justify-content: center; gap: 0.75rem;">
+                                <button type="submit" class="btn btn-primary">
                                     Transmit Message
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
                                 </button>
